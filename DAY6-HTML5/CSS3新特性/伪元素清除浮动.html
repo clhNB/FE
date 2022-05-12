@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素清除浮动</title>
+
+    <style>
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            height: 0;       /* 不看见这个元素 */
+            clear: both;        /* 核心代码清除浮动 */
+            visibility: hidden;  /* 不看见这个元素 */
+        }
+
+        .clearfix::after,.clearfix::before{
+            display: table;
+            content: '';
+        }
+
+        .clearfix::after{
+            clear:both;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    
+</body>
+</html>

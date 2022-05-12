@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3盒子模型</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 20px solid salmon;
+            padding: 15px;
+        }
+
+        p{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+           
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        box-sizing : content-box; 盒子大小为width + padding + border (默认值)
+        box-sizing : border-box; 盒子大小为width
+
+        若使用box-sizing : border-box; padding和border就不会撑大盒子(前提是padding和border不会超过width宽度)
+
+    -->
+
+<body>
+
+    <div>
+        陈龙昊是帅哥
+    </div>
+
+    <p>
+        陈龙昊是帅哥
+    </p>
+    
+</body>
+</html>

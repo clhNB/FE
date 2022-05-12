@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进度条案例</title>
+
+    <style>
+
+        .bar{
+            width: 150px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 7px;
+        }
+
+        .bar_in{
+            width: 0;
+            height: 100%;
+            background-color: red;
+            border-radius: 7px;
+            transition: all .7s;
+        }
+
+        .bar:hover .bar_in{
+            width: 100%;
+        } 
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        子元素高度不会继承父元素的高度，若子元素有内容也不会继承父元素高度
+        只会被文字撑开
+
+    -->
+
+<body>
+    
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+
+</body>
+</html>
