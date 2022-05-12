@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单轮廓和防止拖曳文本域</title>
+
+    <style>
+
+        input,
+        textarea{
+            outline: none;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        给表单添加outline : 0; 或者 outline : none; 样式之后，就可以去掉默认的蓝色边框
+
+    -->
+
+<body>
+
+    <!-- 取消表单轮廓 -->
+    <input type="text">
+    <!-- 防止拖曳文本域 -->
+    <textarea cols="30" rows="10"></textarea>
+    
+</body>
+</html>

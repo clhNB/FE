@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片文字垂直居中对齐</title>
+
+    <style>
+
+        img{
+            /* vertical-align: bottom; */
+            /* 让图片和文字垂直居中 */
+            vertical-align: middle;
+            /* vertical-align: top; */
+        }
+
+        textarea{
+            outline: none;
+            resize: none;
+            vertical-align: middle;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        CSS的vertical-align属性使用场景：经常用于设置图片或者表单(行内块元素)和文字垂直对齐
+        该属性只针对行内元素或者行内块元素有效
+        图片、表单都属于行内块元素，默认的vertical-align是基线对齐
+
+    -->
+
+<body>
+    
+    <img src="../images/ldh.jpg" alt="#">p陈龙昊是大帅哥
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>你是大丑逼
+
+</body>
+</html>

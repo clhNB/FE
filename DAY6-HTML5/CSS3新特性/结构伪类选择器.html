@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+
+    <style>
+
+        /* 选择ul里面的第一个孩子 li */
+        ul li:first-child{
+            background-color: blue;
+        }
+
+        /* 选择uul里面的最有一个孩子 li */
+        ul li:last-child{
+            background-color: aqua;
+        }
+
+        /* 选择ul里面的第2个孩子 */
+        ul li:nth-child(2){
+            color: #fff;
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        结构伪类选择器主要根据文档结构来选择元素，常用于根据父级选择器里面的子元素
+
+        nth-child(n)选择某个父元素的一个或多个特定的子元素
+        n可以是数字、关键字和公式
+        关键字：even偶数 odd奇数
+        公式：从0开始计算，但是第0个元素或者超出了元素的个数会被忽略
+        nth-child(必须是n)
+        2n 等价于 even ; 2n+1 等价于 odd ; n+i 从第i个开始(包含第i个)到最后 -n+i 前i个(包含第i个)
+
+    -->
+
+<body>
+
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+    
+</body>
+</html>

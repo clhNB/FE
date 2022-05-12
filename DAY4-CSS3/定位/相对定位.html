@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+
+    <style>
+
+        .box1{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        相对定位是元素在移动位置的时候,相对于它原来的位置来说的
+        特点:是相对于自己原来的位置来移动的(移动位置的时候参照点是自己原来的位置)
+        原来在标准流的位置继续占有,后面的盒子仍然以标准流的方式对待它(不脱标,继续保留原来位置)
+
+        子绝父相：因为父级需要占有位置，因此是相对定位；子盒子不需要占有位置，则是绝对定位
+        当然子绝父相不是永远不变的，如果父元素不需要占有位置，子绝父绝也会遇到
+
+    -->
+
+<body>
+    
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格基本语法</title>
+</head>
+<!--
+
+    恢复网页快捷键 ctrl + shift + t
+    
+    th:表头单元格，常用于表格第一行，突出重要性，表头单元格里面的文字会加粗居中显示
+    cellpadding:规定单元边沿与其内容之间的空白，默认1像素
+    cellspacing:规定单元格之间的空白，默认2像素
+    
+    <thead>标签表格的头部区域
+    <tbody>标签表格的主体区域，这样可以更好的分清表格结构
+    
+    合并单元格：
+        跨行合并：rowspan="合并单元格的个数"
+        跨列合并：colspan="合并单元格的个数"
+
+        跨行：最上侧单元格为目标单元格，写合并代码
+        跨列：最左侧单元格为目标单元格，写合并代码
+
+        步骤：
+            1、确定是跨行还是跨列合并
+            2、找到目标单元格，写合并方式
+            3、删除多余的单元格
+
+-->
+<body>
+<!-- 
+
+
+ -->
+    <table align="center" border="1px" cellpadding="10px" cellspacing="0px">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td rowspan="">陈龙昊</td>
+            <td>唐宇鑫</td>
+            <td>宋俊龙</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

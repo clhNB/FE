@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5多媒体标签</title>
+
+    <style>
+
+        video{
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        <video>元素支持三种视频格式(MP4,WebM,Ogg)：尽量使用mp4格式
+
+        <video src="文件地址" controls="controls"></video>
+
+        考虑兼容性问题的写法：
+        <video controls="controls" width="300px">
+            <source src="media/mi.mp4" type="video/mp4">
+            <source src="media/mi.ogg" type="video/ogg">
+            您的浏览器暂不支持<video>标签播放视频
+        </video>
+
+        video标签属性及属性值：
+            autoplay = "autoplay" 视频就绪自动播放(谷歌浏览器需要添加muted来解决自动播放问题)
+            controls = "controls" 向用户显示播放控件
+            width height 设置播放器宽高
+            loop = "loop" 播放完是否继续播放该视频，循环播放
+            poster = imgurl 加载等待的画面图片
+            muted = muted 静音播放
+
+    -->
+
+<body>
+
+    <video src="../media/mi.mp4" controls="controls" autoplay muted poster="../media/mi9.jpg"></video>
+    
+    
+    
+</body>
+</html>

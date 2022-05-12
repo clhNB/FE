@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接标签</title>
+</head>
+
+<body>
+
+    <!--外部链接-->
+    <!--target 打开窗口的方式 默认值是_self:当前窗口打开页面 _blank:新窗口打开页面-->
+    <a href="http://www.qq.com" target="_blank">腾讯</a>
+    
+    <!--内部链接：网页内部页面之间的相互链接-->
+    <a href="图像标签.html" target="_blank">图像</a>
+
+    <!--空链接:如果当前没有确定链接目标时，可使用-->
+    <a href="#">首页</a>
+
+    <!--下载链接:如果href中的地址是一个文件或者压缩包，会下载这个文件-->
+
+    <!--网页元素链接:在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接-->
+    <a href="http://www.baidu.com"><img src="./1.jpg"></a>
+
+    <!--
+        
+        锚点链接：当我们点击链接，可以快速定位到页面中的某个位置
+            在链接文本的href属性中，设置属性值为#名字的形式
+            找到目标位置标签，里面添加一个id属性 = 刚才的名字
+    
+    -->
+    <a href="#CHN">中国</a>
+
+    <p id="CHN">中华人民共和国，简称中国，位于亚洲东部，太平洋西岸， 是工人阶级领导的、以工农联盟为基础的人民民主专政的社会主义国家。</p>
+
+</body>
+</html>

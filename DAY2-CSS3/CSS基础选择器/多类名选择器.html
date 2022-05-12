@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多类名选择器</title>
+
+    <style>
+
+        .red{
+            color: red;
+        }
+
+        .font35{
+            font-size: 35px;
+        }
+
+    </style>
+
+</head>
+
+   <!-- 
+
+        一个标签可以拥有多个类名，类名与类名之间用空格分开 
+        使用场景：
+            可以把一些标签元素相同的样式(共同部分)放到一个类里面
+            这些标签都可以调用这个公共的类，然后再调用自己独有的类
+            节省CSS代码，修改也方便
+
+        id选择器：其属性值只能使用一次
+
+    -->
+
+<body>
+
+    <div class="red font35">周杰伦</div>
+    
+</body>
+</html>

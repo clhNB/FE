@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5新增的input类型</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+        属性值                            说明
+        <input type="email">              限制用户输入必须为Email类型
+        <input type="url">                限制用户输入必须为URL类型
+        <input type="date">               限制用户输入必须为日期类型
+        <input type="time">               限制用户输入必须为时间类型
+        <input type="month">              限制用户输入必须为月类型
+        <input type="week">               限制用户输入必须为周类型
+        <input type="number">             限制用户输入必须为数字类型
+        <input type="tel">                手机号码
+        <input type="search">             搜索框
+        <input type="color">              生成一个颜色选择表单
+
+    -->
+
+<body>
+
+    <!-- 我们验证的时候必须添加form表单域 -->
+    <form action="">
+        <ul>
+            <li><input type="email"></li>
+            <li><input type="url"></li>
+            <li><input type="date"></li>
+            <li><input type="time"></li>
+            <li><input type="month"></li>
+            <li><input type="week"></li>
+            <li><input type="number"></li>
+            <li><input type="tel"></li>
+            <li><input type="search"></li>
+            <li><input type="color"></li>
+            <!-- 当我们点击提交按钮就可以验证表单了 -->
+            <li><input type="submit" value="提交"></li>
+        </ul>
+    </form>
+
+   
+    
+</body>
+</html>

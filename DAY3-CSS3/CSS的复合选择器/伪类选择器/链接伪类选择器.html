@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+
+    <style>
+
+        a:link{
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: orange;
+        }
+
+        a:hover{
+            color: skyblue;
+        }
+
+        a:active{
+            color: green;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        :link 未访问的链接，即把没有点击过的链接选出来
+        :visited 已被访问的链接，即选择点击过的链接
+        :hover 选择鼠标经过的那个链接
+        :active 选择鼠标正在按下还没有弹起鼠标的那个链接
+
+
+        链接伪类选择器注意事项：
+            为了确保生效，需按照LVHA的顺序书写：:link :visited :hover :active
+            a链接在浏览器中具有默认样式，所以在工作中需要给链接单独指定样式
+
+    -->
+
+<body>
+
+    <a href="#">小猪佩奇</a>
+    <a href="www.xxxxxxxx.com">未知的网站</a>
+    
+</body>
+</html>

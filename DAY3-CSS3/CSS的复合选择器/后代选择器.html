@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+
+    <style>
+        /* 把ol中的li选择出来进行修饰 */
+        ol li{
+            color: aqua;
+        }
+
+        ol li a{
+            color: bisque;
+            text-decoration: none;
+        }
+
+        .nav li a{
+            color: yellow;
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        选择父元素里的所有子元素
+            元素1 元素2 {样式声明}
+            ol li {样式声明}
+
+    -->
+
+<body>
+   
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">我是ol的孙子</a></li>
+    </ol>
+
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">不会变化的</a></li>
+    </ul>
+
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">不会变化的</a></li>
+    </ul>
+
+</body>
+</html>
