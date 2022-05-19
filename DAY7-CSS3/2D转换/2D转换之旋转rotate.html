@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D转换之旋转rotate</title>
+
+    <style>
+
+        img{
+            width: 100px;
+            /* transform: rotate(45deg); */
+            border-radius: 50%;
+            border: 5px solid skyblue;
+            transition: all .3s;
+        }
+
+        img:hover{
+            transform: rotate(180deg);
+          
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        2D旋转是让元素在2维平面内顺时针或者逆时针旋转
+        transform : rotate(度数)
+
+        重点：
+            rotate里面跟度数，单位是deg
+            角度为正时，顺时针；角度为负时，逆时针
+            默认旋转的中心点是元素的中心点
+
+    -->
+
+<body>
+
+    <img src="images/pic.jpg" alt="">
+    
+</body>
+</html>

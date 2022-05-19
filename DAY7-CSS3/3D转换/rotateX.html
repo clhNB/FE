@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotateX</title>
+
+    <style>
+
+        body{
+            perspective: 500px;
+        }
+
+        img{
+            display: block;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+
+        img:hover{
+            transform: rotateX(180deg);
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        左手准则：
+            左手的手拇指指向x轴的正方向
+            其余手指的弯曲方向就是该元素沿着x轴旋转的方向
+
+    -->
+
+<body>
+
+    <img src="../2D转换/images/pic.jpg" alt="">
+    
+</body>
+</html>
