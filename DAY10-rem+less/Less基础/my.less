@@ -1,0 +1,17 @@
+// less变量命名规范
+//     必须有@为前缀
+//     不能包含特殊字符
+//     不能以数字开头
+//     大小写敏感
+@color: purple;
+// 定义一个 字体为14的变量
+@font14: 14px;
+
+body{
+    background-color: @color;
+}
+
+div{
+    color: @color;
+    font-size: @font14;
+}

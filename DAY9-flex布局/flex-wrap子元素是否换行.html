@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap子元素是否换行</title>
+
+    <style>
+
+        div{
+            display: flex;
+            width: 600px;
+            height: 400px;
+            background-color: blue;
+            flex-wrap: wrap;
+        }
+
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        flex-wrap属性定义，flex布局中默认是不换行的
+
+        属性值                          说明
+        nowrap                          默认值，不换行
+        wrap                            换行
+
+    -->
+
+<body>
+
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</body>
+</html>

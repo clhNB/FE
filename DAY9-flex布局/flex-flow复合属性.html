@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow复合属性</title>
+
+    <style>
+
+        div{
+            display: flex;
+            width: 600px;
+            height: 300px;
+            background-color: aqua;
+            /* flex-direction: column;
+            flex-wrap: wrap; */
+            /* 简写 */
+            flex-flow: column wrap;
+        }
+
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        flex-flow属性是flex-direction和flex-wrap属性的复合属性
+
+    -->
+
+<body>
+
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</body>
+</html>

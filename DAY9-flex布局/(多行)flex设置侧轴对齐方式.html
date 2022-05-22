@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(多行)flex设置侧轴对齐方式</title>
+
+    <style>
+
+        div{
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: aqua;
+            /* 换行 */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            align-content: space-around;
+        }
+
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        align-content设置子项在侧轴上的排列方式并且只能用于子项出现换行的情况(多行)
+        在单行下是没有效果的
+
+    -->
+
+<body>
+
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</body>
+</html>

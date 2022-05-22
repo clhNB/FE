@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex主轴方向</title>
+
+    <style>
+
+        div{
+            /* 给父级添加flex属性 */
+            display: flex;
+            width: 800px;
+            height: 300px;
+            background-color: blue;
+        }
+
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+
+    </style>
+
+</head>
+
+    <!-- 
+
+        主轴与侧轴
+            默认主轴方向是x轴方向，水平向右
+            默认侧轴方向是y轴方向，水平向下
+
+        flex-direction属性决定主轴的方向(即项目的排列方向)
+        主轴和侧轴是会变化的，看flex-direction设置谁为主轴，剩下的就是侧轴，子元素是跟着主轴来排列的
+
+        属性值                              说明
+        row                                 默认从左到右
+        row-reverse                         从右到左
+        column                              从上到下
+        column-reverse                      从下到上
+
+    -->
+
+<body>
+
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #707070;
+}
+
+// 约束当前屏幕大于 750px 的时候，html字体大小不发生改变
+@media screen and (min-width: 750px){
+    html{
+        font-size: 37.5px !important;
+    }
+}
+
+.header{
+    height: 2.1333rem;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    line-height: 2.1333rem;
+    font-size: .9333rem;
+    color: #1c1c1c;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    .item{
+        display: flex;
+        width: 33.33%;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 3.7067rem;
+            height: 3.7067rem;
+        }
+        span{
+            font-size: .6667rem;
+            color: #707070;
+        }
+    }
+}
